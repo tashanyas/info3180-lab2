@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+<div class="card">
+    <div class="top">
+        <img src="{{ url_for('static', filename='Black Woman.jpg') }}" alt="User's Profile Photo">
+
+        <h1 id="name"> Tashanya Martin</h1>
+        <p>@<span id="username">_._tash</span>
+            <br>St Elizabeth, Jamaica
+            <br>Joined <span id="date">February 19, 2024</span>
+        </p>
+    </div>
+
+    <div class="base">
+        <p id="bio">It's a pleasure to introduce myself to you! My name is Tashanya Martin. I am 21 years old and
+            I am passionate about Computer Science. Contact me if you are interested in working together.</p>
+
+        <div class="details">
+            <div class="columns">
+                <span id="posts">55</span>
+                <p>Posts</p>
+            </div>
+            <div class="columns">
+                <span id="following">1500</span>
+                <p>Following</p>
+            </div>
+            <div class="columns">
+                <span id="followers">2500</span>
+                <p>Followers</p>
+            </div>
+        </div>
+
+        <button>Follow</button>
+    </div>
+</div>
+
+{% endblock %}
